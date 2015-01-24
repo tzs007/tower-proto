@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tower International Property List</title>
+	<link rel="stylesheet" href="resources/vendor/normalize.css/normalize.css">
+	<link rel="stylesheet" href="resources/css/style.css">
+	<script src="resources/vendor/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('#btn-contact').on('click', function(e){
+				e.preventDefault();
+
+				$('#page').animate({
+					top: "310"
+				}, {
+					duration: 500,
+					easing: 'swing'
+				});
+
+				$('#form').animate({
+					top: "20"
+				}, {
+					duration: 900,
+					easing: 'swing'
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="nav">
+			<img src="resources/images/nav.png" alt="">
+		</header>
+		<main id="page">
+			<img src="resources/images/form.png" alt="" id="form">
+			<a href="#" id="btn-contact"></a>
+			<img src="resources/images/page.png" alt="">
+		</main>
+	</div>
+</body>
+</html>
